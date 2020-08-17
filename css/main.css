@@ -922,14 +922,17 @@ body.dashboard {
   color: #6f6f6f;
   margin-bottom: 8px;
   padding: 4px 0;
+  position: relative;
+  padding-left: 20px;
 }
 .sidebar-mobile .sidebar-content a .fa, .sidebar-mobile .sidebar-content a .fas {
   width: 14px;
   height: 14px;
   font-weight: 900;
-  margin-right: 4px;
   font-size: 14px;
   color: #6f6f6f;
+  position: absolute;
+  left: 0;
 }
 .sidebar-mobile .sidebar-content a .fa.active, .sidebar-mobile .sidebar-content a .fas.active {
   color: #0f9b5f;
@@ -992,14 +995,17 @@ body.dashboard {
   color: #6f6f6f;
   margin-bottom: 8px;
   padding: 4px 0;
+  position: relative;
+  padding-left: 20px;
 }
 .sidebar a .fa, .sidebar a .fas {
   width: 14px;
   height: 14px;
   font-weight: 900;
-  margin-right: 4px;
   font-size: 14px;
   color: #6f6f6f;
+  position: absolute;
+  left: 0;
 }
 .sidebar a .fa.active, .sidebar a .fas.active {
   color: #0f9b5f;

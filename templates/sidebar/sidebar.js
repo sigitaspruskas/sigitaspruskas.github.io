@@ -4,7 +4,7 @@ let sidebarHTML = `
     </section>
     <section>
         <p class="title">ACCOUNT MANAGEMENT</p>
-        <a href="../account/subscriptions.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Active subscription</a>
+        <a href="../account/subscriptions.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Active subscription very long text is here</a>
         <a href="../account/org_logo.html"><i class="fas fa fa-image" aria-hidden="true"></i>Organisation logo</a>
         <a href="../account/org_details.html"><i class="fas fa fa-house" aria-hidden="true"></i>Organisation details</a>
         <a href="../account/contacts.html"><i class="fas fa fa-phone" aria-hidden="true"></i>Contacts details</a>

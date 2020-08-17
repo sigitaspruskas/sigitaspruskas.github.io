@@ -948,13 +948,17 @@ body.dashboard {
             color: $text-dark-grey;
             margin-bottom: 8px;
             padding: 4px 0;
+            position: relative;
+            padding-left: 20px;
             .fa, .fas {
                 width: 14px;
                 height: 14px;
                 font-weight: 900;
-                margin-right: 4px;
+                // margin-right: 4px;
                 font-size: 14px;
                 color: $text-dark-grey;
+                position: absolute;
+                left: 0;
                 &.active {
                     color: $bg-green;
                 }
@@ -1013,13 +1017,19 @@ body.dashboard {
         color: $text-dark-grey;
         margin-bottom: 8px;
         padding: 4px 0;
+        //
+        position: relative;
+        padding-left: 20px;
+        // line-height: 120%;
         .fa, .fas {
             width: 14px;
             height: 14px;
             font-weight: 900;
-            margin-right: 4px;
+            // margin-right: 4px;
             font-size: 14px;
             color: $text-dark-grey;
+            position: absolute;
+            left: 0;
             &.active {
                 color: $bg-green;
             }
