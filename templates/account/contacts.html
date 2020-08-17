@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <!-- <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css"> -->
+
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href="../../css/reset.css" rel="stylesheet"/>
+    <link href="../../css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/ddcbc7c82c.js" crossorigin="anonymous"></script>
+</head>
+<body class="dashboard">
+
+    <div class="modal">
+        <div class="inner">
+            <div class="top-line">
+                <h3>Edit contact details</h3>
+            </div>
+            <a href="#" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <div class="content">
+                <form action="#" id="contact-details" class="standart-form" method="POST">
+                    <p>
+                        <label for="address" class="required">Address</label>
+                        <input id="address" type="text" name="org_name" maxlength="100" placeholder="Enter address" required>
+                    </p>
+                    <p>
+                        <label for="postal_code" class="required">Postal code</label>
+                        <input id="postal_code" type="tel" name="postal_code" maxlength="100" placeholder="Enter postal code" required>
+                    </p>
+                    <p>
+                        <label for="city" class="required">City/Municipality</label>
+                        <input id="city" type="text" name="city" maxlength="100" placeholder="Enter city/municipality" required>
+                    </p>
+                    <p>
+                        <label for="country" class="required">Country</label>
+                        <input id="country" type="text" name="country" maxlength="100" placeholder="Enter country" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone number</label>
+                        <input id="phone" type="text" name="phone" maxlength="100" placeholder="Enter phone">
+                    </p>
+                    <p>
+                        <label for="email">Email address</label>
+                        <input id="email" type="text" name="email" maxlength="100" placeholder="Enter address">
+                    </p>
+                    <input type="submit" class="btn bg-green" value="submit">
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="dashboard clearfix">
+
+            <div class="top-line">email@email.com</div>
+            
+            <div class="sidebar" id="sidebar">
+                <script src="../sidebar/sidebar.js"></script>
+                <script>
+                    $('#sidebar').html(sidebarHTML)
+                </script>
+            </div>
+            
+            <div class="main-section">
+
+                <div class="page-heading"><h3>Contact details</h3></div>
+
+                <div class="content">
+
+                    <div class="task-area"><p>This address is used for... Only main account users can change it.</p></div>
+
+                    <div class="task-area">
+                        <form action="#" id="contact-details" class="standart-form" method="POST">
+                            <p>
+                                <label for="address" class="required">Address</label>
+                                <input id="address" type="text" name="org_name" maxlength="100" class="hide" placeholder="Enter address" required>
+                                <span class="text-line">manhatan av.</span>
+                            </p>
+                            <p>
+                                <label for="postal_code" class="required">Postal code</label>
+                                <input id="postal_code" type="tel" name="postal_code" maxlength="100" class="hide" placeholder="Enter postal code" required>
+                                <span class="text-line">88888</span>
+                            </p>
+                            <p>
+                                <label for="city" class="required">City/Municipality</label>
+                                <input id="city" type="text" name="city" maxlength="100" class="hide" placeholder="Enter city/municipality" required>
+                                <span class="text-line">New York</span>
+                            </p>
+                            <p>
+                                <label for="country" class="required">Country</label>
+                                <input id="country" type="text" name="country" maxlength="100" class="hide" placeholder="Enter country" required>
+                                <span class="text-line">USA</span>
+                            </p>
+                            <p>
+                                <label for="phone">Phone number</label>
+                                <input id="phone" type="text" name="phone" maxlength="100" class="hide" placeholder="Enter phone">
+                                <span class="text-line">+370-090909-0909090</span>
+                            </p>
+                            <p>
+                                <label for="email">Email address</label>
+                                <input id="email" type="text" name="email" maxlength="100" class="hide" placeholder="Enter address">
+                                <span class="text-line">email@email.com</span>
+                            </p>
+                        </form>
+                        <a href="#" id="enable-form-edit" class="btn bg-green">Edit</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bottom-bar hide">
+                <input type="submit" class="btn bg-green" form="contact-details" value="submit">
+                <a href="#" class="secondary-btn">Cancel</a>
+                <a href="#" class="secondary-btn" id="open-modal">Open modal</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+<script src="../../static/js/main.js"></script>
+<script>
+    function toggleFormEdit() {
+        $('#enable-form-edit').toggleClass('hide');
+        $('.main-section #contact-details').find('input, .text-line').toggleClass('hide');
+        $('.bottom-bar').toggleClass('hide');
+    }
+
+    $('#enable-form-edit').click(function(){
+        toggleFormEdit();
+    });
+
+    $('input[form=contact-details]').click(function(e){
+        e.preventDefault();
+        toggleFormEdit();
+    });
+</script>
+
+</html>

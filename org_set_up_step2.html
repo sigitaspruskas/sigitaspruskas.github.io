@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container bg-white">
+            <div class="org-set-up choose-plan">
+
+            <div class="col">
+                
+                <img class="main-logo" src="./static/img/signspace_logo.svg" alt="signspace">
+                
+                <div class="lang-toggle">EN <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="options-menu-dropdown hide" >
+                        <li><a href="#">EN - English</a></li>
+                        <li><a href="#">FI - Finnish</a></li>
+                    </ul>
+                </div>
+
+                <h2>Step 2 of 3: Organization details</h2>
+
+                <p class="strong">Choose your plan based on the number of electronic sigantures needed for your organisation</p>
+                
+                <form action="#" id="sign-up-personal-details" class="card-style-form" method="POST">
+                    <div class="card">
+                        <label for="campaign" class="clearfix">
+                            <i class="fa fa-gift" aria-hidden="true"></i>
+                            <span class="name">CAMPAIGN</span>
+                            <input id="campaign" type="text" placeholder="Enter promo code">
+                            <a href="" class="btn bg-green">Apply</a>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label for="limited">
+                            <input id="limited" type="radio" name="plan">
+                            <span class="name">LIMITED</span>
+                            <div class="descrip">
+                                <h3>Limited functionality</h3>
+                                Includes access to organisation content and participation to discussions
+                            </div>
+                            <div class="price">FREE</div>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label for="small">
+                            <input id="small" type="radio" name="plan">
+                            <span class="name">SMALL</span>
+                            <div class="descrip">
+                                <h3>Includes 60 signatures/year</h3>
+                                1,20 €/signature after that
+                            </div>
+                            <div class="price">
+                                <h3>6 €/month</h3>
+                                4 weeks free trial
+                            </div>
+                        </label>
+                    </div>
+                    <div class="card current">
+                        <label for="medium">
+                            <input id="medium" type="radio" name="plan" checked>
+                            <span class="name">MEDIUM</span>
+                            <div class="descrip">
+                                <h3>Includes 600 signatures/year</h3>
+                                1,00 €/signature after that
+                            </div>
+                            <div class="price">
+                                <h3>6 €/month</h3>
+                                4 weeks free trial
+                            </div>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label for="large">
+                            <input id="large" type="radio" name="plan">
+                            <span class="name">LARGE</span>
+                            <div class="descrip">
+                                <h3>Includes 1500 signatures/year</h3>
+                                0,80 €/signature after that
+                            </div>
+                            <div class="price">
+                                <h3>49 €/month</h3>
+                                4 weeks free trial
+                            </div>
+                        </label>
+                    </div>
+                    <div class="card">
+                        <label for="enterprise">
+                            <input id="enterprise" type="radio" name="plan">
+                            <span class="name">ENTERPRISE</span>
+                            <div class="descrip">
+                                <h3>Tailored to your organization's needs</h3>
+                                Includes access to organisation content and participation to discussions
+                            </div>
+                            <div class="price">
+                                <h3>As agreed upon separately</h3>
+                            </div>
+                        </label>
+                    </div>
+
+                    <p><strong>Functionality:</strong> Each plan includes electronic signing, secure business 
+                        collaboration, task management and file sharing. Enterprise plan also includes an unlimited number of API integrations.</p>
+                    
+                    <p><strong>Reasonable use:</strong> Your subscription includes the right to use all functionality included in the selected license plan as long 
+                        as your use of the service can be considered to be within the scope of customary and reasonable use taking into 
+                        consideration your paid monthly fees. Use of the service is not customary and reasonable, for example in cases where 
+                        customer is using in large scale messages or chat functionalities instead of electronic signatures or when the number 
+                        of customer invited and strongly identified participants in any cooperation areas in substantially higher than the number 
+                        of electronic signatures made in the service.</p>
+
+                    <div class="row">
+                        <a href="org_set_up_step3.html" class="btn bg-green">Continue</a>
+                        <a href="#" class="large">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col background">
+                <img src="./static/img/banner-3.png" alt="">
+                <div class="bg-bottom"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="static/js/main.js"></script>
+
+</html>

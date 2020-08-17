@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <!-- <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css"> -->
+
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href="../../css/reset.css" rel="stylesheet"/>
+    <link href="../../css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/ddcbc7c82c.js" crossorigin="anonymous"></script>
+</head>
+<body class="dashboard">
+
+    <div class="modal">
+        <div class="inner">
+            <a href="#" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <div class="content">CONTENT</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="dashboard">
+
+            <div class="top-line">email@email.com</div>
+            
+            <div class="sidebar" id="sidebar">
+                <script src="../sidebar/sidebar.js"></script>
+                <script>
+                    $('#sidebar').html(sidebarHTML)
+                </script>
+            </div>
+            
+            <div class="main-section">
+
+                <div class="page-heading"><h3>Organisation logo</h3></div>
+
+                <div class="content">
+
+                    <div class="task-area">
+                        <div class="area-heading"><h3>Logo image</h3></div>
+                        <p>This logo image will be displayed in the main SignSpace app for all your organzation users. 
+                            Recommended format is a PNG file with transparent background.</p>
+                        <div class="task-area-wrapp">
+                            <div class="img-wrapp"><img src="../../static/img/signspace_logo.svg" alt=""></div>
+                        </div>
+                        <a href="#" class="btn bg-green">Change logo</a>
+                        <a href="#" class="secondary-btn">Remove logo</a>
+                    </div>
+
+                    <div class="task-area">
+                        <div class="area-heading"><h3>Logo usage in email notifications</h3></div>
+                        <p>If you select this checkbox, the above logo image will also be displayed in the email notifications 
+                            and invitations sent to all recipients on behalf of your organization. When people are signing 
+                            documents or voting on your polls without regi</p>
+                        <div class="task-area-wrapp">
+                            <input type="checkbox" class="checkbox"> Display organization logo on the email notifications, invitations, document signing and poll workflow.
+                        </div>
+                        <a href="#" class="btn bg-green">Save</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bottom-bar">
+                <input type="submit" class="btn bg-green" form="contact-details" value="submit">
+                <a href="#" class="secondary-btn">Cancel</a>
+                <a href="#" class="secondary-btn" id="open-modal">Open modal</a>
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
+<script src="../../static/js/main.js"></script>
+
+</html>

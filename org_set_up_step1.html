@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container bg-white">
+            <div class="org-set-up">
+
+            <div class="col">
+                
+                <img class="main-logo" src="./static/img/signspace_logo.svg" alt="signspace">
+                
+                <div class="lang-toggle">EN <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="options-menu-dropdown hide" >
+                        <li><a href="#">EN - English</a></li>
+                        <li><a href="#">FI - Finnish</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <h2>Step 1 of 3: Organization details</h2>
+                </div>
+                
+                <form action="#" id="sign-up-personal-details" class="standart-form" method="POST">
+                    <p>
+                        <label for="org_name" class="required">Organization name</label>
+                        <input id="org_name" type="text" name="org_name" maxlength="100" placeholder="Enter your organisation name" required>
+                    </p>
+                    <p class="clearfix">
+                        <label for="org_id" class="required">Organization ID</label>
+                        <input id="org_id" type="text" name="org_id" maxlength="100" placeholder="Enter your organisation ID" required>
+                    </p>
+                    <p>
+                        <label for="street_address" class="required">Street address</label>
+                        <input id="street_address" type="text" name="street_address" maxlength="100" placeholder="Enter company street address" required>
+                    </p>
+                    <p>
+                        <label for="city" class="required">City</label>
+                        <input id="city" type="text" name="city" maxlength="100" placeholder="Enter your company city" required>
+                    </p>
+                    <p>
+                        <label for="postal_code" class="required">Postal code</label>
+                        <input id="postal_code" type="tel" name="postal_code" maxlength="100" placeholder="Enter your compnay postal code" required>
+                    </p>
+                    <p>
+                        <label for="country" class="required">Country</label>
+                        <input id="country" type="text" name="country" maxlength="100" placeholder="Enter your compnay country" required>
+                    </p>
+                    <p class="clearfix">
+                        <label for="agree_to_terms" class="terms">I accept the 
+                            <a href="#">Terms of Service</a>, <a href="#">Data Processing Agreement</a> and <a href="#">Privacy  Policy</a>.
+                        </label>
+                        <input id="agree_to_terms" type="checkbox" name="agree_to_terms" required>
+                    </p>
+                    <div class="row">
+                        <a href="org_set_up_step2.html" class="btn bg-green">Continue</a>
+                        <a href="#" class="large">Cancel</a>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="col background">
+                <img src="./static/img/banner-3.png" alt="">
+                <div class="bg-bottom"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="static/js/main.js"></script>
+
+</html>

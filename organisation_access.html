@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container bg-white">
+            <div class="org-access">
+
+            <div class="col">
+                
+                <img class="main-logo" src="./static/img/signspace_logo.svg" alt="signspace">
+                
+                <div class="lang-toggle">EN <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="options-menu-dropdown hide" >
+                        <li><a href="#">EN - English</a></li>
+                        <li><a href="#">FI - Finnish</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    <h2>Welcome to SignSpace</h2>
+                </div>
+
+                <!-- <div class="row">
+                    <i class="fa fa-address-book" aria-hidden="true"></i>
+                    <h2>Access to your organization requested</h2>
+                </div> -->
+
+                <p class="strong">You indicated, that you represent:</p>
+
+                <div class="msg-box blue-box">
+                    Vaastuu group Oy<br>
+                    ID: 28319382719-9
+                </div>
+
+                <p class="strong">Your organization is not on SignSpace yet. We recommend to finish setting up your organization now.</p>
+                
+                <div class="row">
+                    <a href="org_set_up_step1.html" class="btn bg-green">Set up my organisation</a>
+                    <a href="#" class="large">Will do it later</a>
+                </div>
+
+            </div>
+
+            <div class="col background">
+                <img src="./static/img/banner-3.png" alt="">
+                <div class="bg-bottom"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<!-- <script>
+    (function(){
+        const langBtn = $('.lang-toggle');
+        let lang_toggle_open = false;
+
+        function toggleLangMenu(element) {
+            element.find('.options-menu-dropdown').toggleClass('hide');
+            element.find('i.fa').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
+            lang_toggle_open = !lang_toggle_open;
+        };
+
+        $(window).on('click', function(e){
+            const target = $(e.target);
+
+            if (!target.is('.lang-toggle') && !target.parent().is('.lang-toggle') && lang_toggle_open) {
+                toggleLangMenu(langBtn);
+            } else if ($(e.target).is('.lang-toggle')) {
+                toggleLangMenu(langBtn);
+            };
+        });
+    })()
+</script> -->
+<script src="static/js/main.js"></script>
+
+</html>

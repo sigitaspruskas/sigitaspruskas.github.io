@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <!-- <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css"> -->
+
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href="../../css/reset.css" rel="stylesheet"/>
+    <link href="../../css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/ddcbc7c82c.js" crossorigin="anonymous"></script>
+</head>
+<body class="dashboard">
+
+    <div class="modal">
+        <div class="inner">
+            <a href="#" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <div class="content">CONTENT</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="dashboard">
+
+            <div class="top-line">email@email.com</div>
+            
+            <div class="sidebar" id="sidebar">
+                <script src="../sidebar/sidebar.js"></script>
+                <script>
+                    $('#sidebar').html(sidebarHTML)
+                </script>
+            </div>
+            
+            <div class="main-section">
+
+                <div class="page-heading"> <h3>Change picture</h3></div>
+
+                <div class="notification" style="margin-bottom: 16px;">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    You can apply this picture to all your other accounts. <a href="#" class="secondary-btn"><i class="far fa-repeat" aria-hidden="true"></i> Update invoicing details</a>
+                </div>
+
+                <div class="content">
+
+                    <div class="task-area">
+                        <div class="page-heading"><h3>Page heading</h3></div>
+                        <p>This picture will be displayed in the main SignSpace app to indicate your activities and membership.</p>
+                        <div class="task-area-wrapp">
+                            <div class="img-wrapp"><img src="../../static/img/tim.png" alt=""></div>
+                        </div>
+                        <a href="#" class="btn bg-green">Change picture</a>
+                        <a href="#" class="secondary-btn">Remove picture</a>
+                    </div>
+
+            </div>
+        </div>
+
+        <div class="bottom-bar">
+            <input type="submit" class="btn bg-green" form="contact-details" value="submit">
+            <a href="#" class="secondary-btn">Cancel</a>
+            <a href="#" class="secondary-btn" id="open-modal">Open modal</a>
+        </div>
+
+    </div>
+</body>
+
+<script src="../../static/js/main.js"></script>
+
+</html>

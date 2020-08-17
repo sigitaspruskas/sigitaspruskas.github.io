@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <!-- <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css"> -->
+
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href="../../css/reset.css" rel="stylesheet"/>
+    <link href="../../css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/ddcbc7c82c.js" crossorigin="anonymous"></script>
+</head>
+<body class="dashboard">
+
+    <div class="modal">
+        <div class="inner">
+            <a href="#" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <div class="content">CONTENT</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="dashboard invoices">
+
+            <div class="top-line">email@email.com</div>
+            
+            <div class="sidebar" id="sidebar">
+                <script src="../sidebar/sidebar.js"></script>
+                <script>
+                    $('#sidebar').html(sidebarHTML)
+                </script>
+            </div>
+            
+            <div class="main-section">
+
+                <div class="page-heading"><h3>Invoices</h3></div>
+
+                <div class="tab-area clearfix">
+                    <div class="tab active">Invoice list</div>
+                    <div class="tab">Invoicing details</div>
+                </div>
+
+                <div class="content">
+
+                    <div class="task-area">
+                        <p>Subscription fee is invoiced annually in advance. The first invoice is issued 1 week after the end of the free trial in 
+                            case your organization does not cancel the service. A plan may be changed or terminated at any time. The fee for unused 
+                            full calendar months will be refunded.</p>
+                        <p>Fees for additional signatures exceeding the number of free signatures allocated by the plan are invoiced in calendar 
+                            quarterly invoices.</p>
+                    </div>
+
+                    <div class="task-area">
+                        <div class="area-heading"><h3>Invoice list</h3></div>
+
+                        <div class="table-wrapp">
+                            <table class="standart-table">
+                                <thead>
+                                    <tr>
+                                        <th><strong>Date</strong></th>   
+                                        <th>I<strong>nvoice number</strong></th> 
+                                        <th><strong>Amount</strong></th> 
+                                        <th class="description"><strong>Description</strong></th> 
+                                        <th class="action"></th>    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>01.01.2020</td>
+                                        <td>121212121212</td>
+                                        <td>72.00 Eur</td>
+                                        <td class="description">SMALL (01.01.2020 – 31.12.2020)</td>
+                                        <td class="action">
+                                            <a href="" class=""><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.01.2020</td>
+                                        <td>121212121212</td>
+                                        <td>72.00 Eur</td>
+                                        <td class="description">Paid signatures during Q1/2020</td>
+                                        <td class="action">
+                                            <a href="" class=""><i class="fa fa-download" aria-hidden="true"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="content">
+                    <div class="task-area">
+                        <div class="notification">
+                            <i class="fa fa-question-circle" aria-hidden="true"></i>
+                            Your Company details address has been updated. <a href="#" class="secondary-btn">Update invoicing details</a> from Company details.
+                        </div>
+
+                        <div class="taska-area-wrapp">
+                            <strong>Company name</strong>
+                            <p>Suomen Tilaajavastuu Oy</p>
+    
+                            <strong>Business ID</strong>
+                            <p>8474645383836</p>
+    
+                            <strong>Country</strong>
+                            <p>Finland</p>
+    
+                            <strong>Registered on</strong>
+                            <p>2019-05-14 14:57:06</p>
+    
+                            <strong>Registered by</strong>
+                            <p>Janne Jalonen</p>
+    
+                            <strong>Status</strong>
+                            <p>Active</p>
+    
+                            <a href="#" class="btn bg-green">Edit</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bottom-bar">
+                <input type="submit" class="btn bg-green" form="contact-details" value="submit">
+                <a href="#" class="secondary-btn">Cancel</a>
+                <a href="#" class="secondary-btn" id="open-modal">Open modal</a>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+<script src="../../static/js/main.js"></script>
+
+</html>

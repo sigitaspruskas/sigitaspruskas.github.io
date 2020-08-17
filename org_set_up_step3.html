@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="modal">
+        <div class="inner">
+            <a href="#" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <div class="content">CONTENT</div>
+        </div>
+    </div>
+    <div class="container bg-white">
+            <div class="org-set-up choose-invoice">
+
+            <div class="col">
+                
+                <img class="main-logo" src="./static/img/signspace_logo.svg" alt="signspace">
+                
+                <div class="lang-toggle">EN <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="options-menu-dropdown hide" >
+                        <li><a href="#">EN - English</a></li>
+                        <li><a href="#">FI - Finnish</a></li>
+                    </ul>
+                </div>
+
+                <h2>Step 3 of 3: Invoicing details</h2>
+                
+                <form action="#" id="sign-up-personal-details" class="standart-form" method="POST">
+                    <div class="invoice-type">
+                        <label for="invoice_type" class="required">Invoice type</label>
+                        <div class="row">
+                            <input type="radio" name="invoice_type">E-invoicing
+                        </div>
+                        <div class="row">
+                            <input type="radio" name="invoice_type">Paper invoices by mail
+                        </div>
+                    </div>
+                    <p class="clearfix checkbox-row">
+                        <label for="use_data">Fill address from contact details</label>
+                        <input id="use_data" type="checkbox" name="use_data" required>
+                    </p>
+                    <p>
+                        <label for="street_address" class="required">Street address</label>
+                        <input id="street_address" type="text" name="street_address" maxlength="100" placeholder="Enter company street address" required>
+                    </p>
+                    <p>
+                        <label for="city" class="required">City</label>
+                        <input id="city" type="text" name="city" maxlength="100" placeholder="Enter your company city" required>
+                    </p>
+                    <p>
+                        <label for="postal_code" class="required">Postal code</label>
+                        <input id="postal_code" type="tel" name="postal_code" maxlength="100" placeholder="Enter your compnay postal code" required>
+                    </p>
+                    <p>
+                        <label for="country" class="required">Country</label>
+                        <input id="country" type="text" name="country" maxlength="100" placeholder="Enter your compnay country" required>
+                    </p>
+                    <p>
+                        <label for="country">VAT code</label>
+                        <input id="vat_code" type="text" name="vat_code" maxlength="100" placeholder="Enter your company VAT code" required>
+                    </p>
+
+                    <h3>Order summary</h3>
+                    <div class="order-summary clearfix">
+                        <div class="left">
+                            <p>Selected plan</p>
+                            <strong>MEDIUM</strong>
+                            <p>Monthly price</p>
+                            <strong>49 €/month + VAT</strong>
+                            <p>Free trial until</p>
+                            <strong>18/04/2020</strong>
+                        </div>
+                        <div class="right">
+                            <p>
+                                Your organization account will be activated immediately after order is placed.<br><br>
+                                Your subscription is invoiced annually in advance. Your first invoice will be issued 1 week 
+                                after the end of the free trial in case you do not cancel the service.<br><br>
+                                A plan may be terminated at any time. The fee for unused full calendar months will be refunded.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <a href="#" class="btn bg-green">Order plan</a>
+                        <a href="org_set_up_step2.html" class="large">Back</a>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class="col background">
+                <img src="./static/img/banner-3.png" alt="">
+                <div class="bg-bottom"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="static/js/main.js"></script>
+
+</html>

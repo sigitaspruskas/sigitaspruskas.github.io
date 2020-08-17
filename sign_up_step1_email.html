@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <div class="container bg-white">
+        <div class="sign-up confirm-email">
+
+            <div class="col">
+                <img class="main-logo" src="./static/img/signspace_logo.svg" alt="signspace">
+                <div class="lang-toggle">EN <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <ul class="options-menu-dropdown hide" >
+                        <li><a href="#">EN - English</a></li>
+                        <li><a href="#">FI - Finnish</a></li>
+                    </ul>
+                </div>
+                <h2>New registration</h2>
+                <h3>First, let's confirm your email. There is only one more step after this.</h3>
+                <form action="#" id="email-confirm-form" class="standart-form" method="POST">
+                    <p>
+                        <label for="id_email"></label>
+                        <input id="id_email" type="email" name="email" maxlength="100" placeholder="Enter work email" required>
+                    </p>
+                    <input type="submit" value="Confirm" class="btn bg-green">
+                </form>
+                <a href="sign_in.html" class="large">Sign in to existing account</a>
+            </div>
+
+            <div class="col background">
+                <img src="./static/img/banner-1.png" alt="">
+                <div class="bg-bottom bg-green"></div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script src="static/js/main.js"></script>
+<script>
+    (function(){
+        // const langBtn = $('.lang-toggle');
+        // let lang_toggle_open = false;
+
+        // function toggleLangMenu(element) {
+        //     element.find('.options-menu-dropdown').toggleClass('hide');
+        //     element.find('i.fa').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
+        //     lang_toggle_open = !lang_toggle_open;
+        // };
+
+        // $(window).on('click', function(e){
+        //     const target = $(e.target);
+
+        //     if (!target.is('.lang-toggle') && !target.parent().is('.lang-toggle') && lang_toggle_open) {
+        //         toggleLangMenu(langBtn);
+        //     } else if ($(e.target).is('.lang-toggle')) {
+        //         toggleLangMenu(langBtn);
+        //     };
+        // });
+
+        $("#email-confirm-form").on("submit",function(e){
+            e.preventDefault();
+            if (true) {
+                window.location.assign('sign_up_step2_confirm.html');
+            };
+        });
+    })()
+</script>
+
+</html>
