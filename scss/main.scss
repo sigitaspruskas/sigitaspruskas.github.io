@@ -1039,12 +1039,13 @@ body.dashboard {
 .main-section {
     width: 100%;
     max-width: 800px;
-    padding: 32px 16px 0;
+    padding: 32px 0 0;
     font-size: 14px;
     color: $text-dark-grey;
     @include tablet {
         width: calc(100% - 256px);
         float: left;
+        padding: 32px 16px 0;
         padding-left: 0;
     }
     p {
@@ -1069,6 +1070,10 @@ body.dashboard {
         }
     }
     .page-heading {
+        padding-left: 16px;
+        @include tablet {
+            padding-left: 0;
+        }
         h3 {
 
             font-family: ProximaSemibold;
@@ -1109,20 +1114,27 @@ body.dashboard {
     }
     .content {
         background: $bg-white;
-        border: 1px solid $border-light-grey;
-        border-radius: 4px;
+        border-top: 1px solid $border-light-grey;
+        // border-radius: 4px;
         overflow: scroll;
         z-index: 1;
         position: relative;
+        @include tablet {
+            border: 1px solid $border-light-grey;
+            border-radius: 4px;
+        }
         .invoices & {
             border-radius: 0 4px 4px 4px;
         }
     }
     .task-area {
-        padding: 24px 32px;
         line-height: 130%;
+        padding: 24px 16px;
         position: relative;
         border-bottom: 1px solid $border-light-grey;
+        @include tablet {
+            padding: 24px 32px;
+        }
         .task-area-wrapp {
             margin-bottom: 16px;
             line-height: 14px;
