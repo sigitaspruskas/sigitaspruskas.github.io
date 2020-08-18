@@ -534,11 +534,23 @@ input[type=checkbox] {
     &.open {
         display: block;
     }
-    .inner{
+    .inner {
         background: $bg-white;
-        margin: 60px;
         position: relative;
         border-radius: 4px;
+        @include tablet {
+            width: 80%;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+        @include widescreen {
+            position: absolute;
+            width: 100%;
+            max-width: 784px;
+            margin: 0;
+        }
     }
     .top-line {
         color: $text-dashboard-heading;
@@ -1055,6 +1067,9 @@ body.dashboard {
     }
     p {
         margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
         .secondary-btn {
             padding: 0;
         }
@@ -1067,6 +1082,9 @@ body.dashboard {
         padding: 16px;
         border-radius: 4px;
         margin-bottom: 16px;
+        &:last-child {
+            margin-bottom: 0;
+        }
         .fa {
             color: $text-blue;
         }
@@ -1167,9 +1185,9 @@ body.dashboard {
         width: 80px;
         height: 80px;
     }
-    form {
-        margin-bottom: 0;
-    }
+    // form {
+        // margin-bottom: 0;
+    // }
 }
 .bottom-bar {
     font-size: 14px;
@@ -1180,18 +1198,12 @@ body.dashboard {
     position: fixed;
     z-index: 9;
     bottom: 0;
-    // left: 16px;
-    // right: 16px;
     left: 0;
     right: 0;
     @include tablet {
         left: 256px;
         padding: 24px 32px;
     }
-    // @include desktop {
-    //     width: 800px;
-    //     right: unset;
-    // }
     @media (min-width: 1056px ) {
         width: 784px;
         // width: 800px;

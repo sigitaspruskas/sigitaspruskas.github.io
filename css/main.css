@@ -517,9 +517,25 @@ input[type=checkbox] {
 }
 .modal .inner {
   background: #ffffff;
-  margin: 60px;
   position: relative;
   border-radius: 4px;
+}
+@media (min-width: 768px) {
+  .modal .inner {
+    width: 80%;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+@media (min-width: 1200px) {
+  .modal .inner {
+    position: absolute;
+    width: 100%;
+    max-width: 784px;
+    margin: 0;
+  }
 }
 .modal .top-line {
   color: #555555;
@@ -1034,6 +1050,9 @@ body.dashboard {
 .main-section p {
   margin-bottom: 16px;
 }
+.main-section p:last-child {
+  margin-bottom: 0;
+}
 .main-section p .secondary-btn {
   padding: 0;
 }
@@ -1045,6 +1064,9 @@ body.dashboard {
   padding: 16px;
   border-radius: 4px;
   margin-bottom: 16px;
+}
+.main-section .notification:last-child {
+  margin-bottom: 0;
 }
 .main-section .notification .fa {
   color: #32a1d1;
@@ -1146,9 +1168,6 @@ body.dashboard {
 .main-section .img-wrapp {
   width: 80px;
   height: 80px;
-}
-.main-section form {
-  margin-bottom: 0;
 }
 
 .bottom-bar {
