@@ -1119,6 +1119,19 @@ body.dashboard {
   margin-bottom: 16px;
   line-height: 14px;
 }
+.main-section .task-area .task-area-wrapp.check-container {
+  position: relative;
+  padding-left: 20px;
+}
+.main-section .task-area .task-area-wrapp.check-container input[type=checkbox] {
+  position: absolute;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .main-section .task-area .task-area-wrapp.check-container input[type=checkbox] {
+    top: -1px;
+  }
+}
 .main-section .task-area input.checkbox {
   width: 14px;
   height: 14px;

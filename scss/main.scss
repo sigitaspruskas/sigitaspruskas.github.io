@@ -1139,6 +1139,17 @@ body.dashboard {
         .task-area-wrapp {
             margin-bottom: 16px;
             line-height: 14px;
+            &.check-container {
+                position: relative;
+                padding-left: 20px;
+                input[type=checkbox] {
+                    position: absolute;
+                    left: 0;
+                    @include tablet {
+                        top: -1px;
+                    }
+                }
+            }
         }
         input.checkbox {
             width: 14px;
