@@ -27,6 +27,10 @@ body {
   font-family: ProximaRegular;
   color: #333333;
 }
+body.no-scroll {
+  height: 100%;
+  overflow-y: hidden;
+}
 
 h2 {
   font-size: 26px;

@@ -7,11 +7,13 @@
 
         if (target.is('.modal') || target.closest('a.close').length) {
             $("body").find(".modal").removeClass("open");
+            $('body').toggleClass('no-scroll');
         };
     });
 
     $('#open-modal').click(function(){
         $('.modal').addClass('open');
+        $('body').toggleClass('no-scroll');
     })
 
     $('.open-sidebar').click(function(){
@@ -44,15 +46,5 @@
         $('.card.current').toggleClass('current');
         $(this).parents('.card').toggleClass('current');
     });
-
-    console.log($('.bottom-bar').innerHeight())
-
-    // $(window).on('load', function() {
-    //     setTimeout(function() {
-    //         // logic
-    //         console.log($('.bottom-bar').outerHeight())
-    //         //
-    //     }, 1);
-    // });
     
 })()

@@ -57,6 +57,10 @@ $text-white: #ffffff;
 body {
     font-family: ProximaRegular;
     color: $text-black;
+    &.no-scroll {
+        height: 100%;
+        overflow-y: hidden;
+    }
 }
 h1 {
     //
