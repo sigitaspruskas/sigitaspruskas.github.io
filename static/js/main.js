@@ -44,4 +44,15 @@
         $('.card.current').toggleClass('current');
         $(this).parents('.card').toggleClass('current');
     });
+
+    console.log($('.bottom-bar').innerHeight())
+
+    // $(window).on('load', function() {
+    //     setTimeout(function() {
+    //         // logic
+    //         console.log($('.bottom-bar').outerHeight())
+    //         //
+    //     }, 1);
+    // });
+    
 })()

@@ -1040,6 +1040,7 @@ body.dashboard {
     width: 100%;
     max-width: 800px;
     padding: 32px 0 0;
+    padding-bottom: 100px; // for bottom-bar pop up spacing
     font-size: 14px;
     color: $text-dark-grey;
     @include tablet {
@@ -1158,16 +1159,19 @@ body.dashboard {
 .bottom-bar {
     font-size: 14px;
     color: $text-dark-grey;
-    padding: 24px 32px;
+    padding: 24px 16px;
     background: $bg-white;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     position: fixed;
     z-index: 9;
     bottom: 0;
-    left: 16px;
-    right: 16px;
+    // left: 16px;
+    // right: 16px;
+    left: 0;
+    right: 0;
     @include tablet {
         left: 256px;
+        padding: 24px 32px;
     }
     // @include desktop {
     //     width: 800px;
