@@ -441,6 +441,7 @@ input[type=checkbox] {
 }
 .retention-periods .standart-table {
   margin-bottom: 16px;
+  min-width: unset;
 }
 
 .btn {
@@ -1185,6 +1186,7 @@ body.dashboard {
 }
 
 .bottom-bar {
+  display: none;
   font-size: 14px;
   color: #6f6f6f;
   padding: 24px 16px;
