@@ -1018,7 +1018,7 @@ body.dashboard {
     font-size: 14px;
     color: $text-dark-grey;
     width: 256px;
-    height: calc(100vh - 50px);
+    // height: calc(100vh - 50px);
     overflow-y: scroll;
     padding: 0 16px;
     padding-top: 32px;
@@ -1157,7 +1157,7 @@ body.dashboard {
         background: $bg-white;
         border-top: 1px solid $border-light-grey;
         // border-radius: 4px;
-        overflow: scroll;
+        // overflow: scroll;
         z-index: 1;
         position: relative;
         @include tablet {
