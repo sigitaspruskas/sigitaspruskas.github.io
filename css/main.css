@@ -1186,7 +1186,6 @@ body.dashboard {
 }
 
 .bottom-bar {
-  display: none;
   font-size: 14px;
   color: #6f6f6f;
   padding: 24px 16px;
@@ -1201,6 +1200,7 @@ body.dashboard {
 @media (min-width: 768px) {
   .bottom-bar {
     left: 256px;
+    right: 16px;
     padding: 24px 32px;
   }
 }
