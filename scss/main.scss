@@ -390,6 +390,11 @@ input[type=checkbox] {
 }
 .table-wrapp {
     overflow-x: auto;
+    // -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    // scrollbar-width: none;  /* Firefox */
+    // &::-webkit-scrollbar { 
+    //     display: none;  /* Safari and Chrome */
+    // }
 }
 .standart-table {
     border-collapse: collapse;
@@ -1018,6 +1023,13 @@ body.dashboard {
     padding: 0 16px;
     padding-top: 32px;
     float: left;
+    // test css
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    
     @include tablet {
         display: block;
     }
@@ -1059,6 +1071,12 @@ body.dashboard {
     padding-bottom: 100px; // for bottom-bar pop up spacing
     font-size: 14px;
     color: $text-dark-grey;
+    // test css 
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
     @include tablet {
         width: calc(100% - 256px);
         float: left;
