@@ -26,7 +26,7 @@
     </div>
     
     <div class="container">
-        <div class="dashboard">
+        <div class="dashboard-content clearfix">
 
             <div class="sidebar-mobile hide">
                 <div class="sidebar-content">
@@ -35,36 +35,36 @@
                     </section>
                     <section>
                         <p class="title">ACCOUNT MANAGEMENT</p>
-                        <a href="../account/subscriptions.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Active subscription</a>
-                        <a href="../account/org_logo.html"><i class="fas fa fa-image" aria-hidden="true"></i>Organisation logo</a>
-                        <a href="../account/org_details.html"><i class="fas fa fa-house" aria-hidden="true"></i>Organisation details</a>
-                        <a href="../account/contacts.html"><i class="fas fa fa-phone" aria-hidden="true"></i>Contacts details</a>
-                        <a href="../account/users.html"><i class="fas fa fa-user" aria-hidden="true"></i>User management</a>
-                        <a href="../account/invoices.html"><i class="fas fa fa-file-invoice" aria-hidden="true"></i>Invoices</a>
+                        <a class="nav-link" href="../account/subscriptions.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Active subscription very long translated text</a>
+                        <a class="nav-link" href="../account/org_logo.html"><i class="fas fa fa-image" aria-hidden="true"></i>Organisation logo</a>
+                        <a class="nav-link" href="../account/org_details.html"><i class="fas fa fa-house" aria-hidden="true"></i>Organisation details</a>
+                        <a class="nav-link" href="../account/contacts.html"><i class="fas fa fa-phone" aria-hidden="true"></i>Contacts details</a>
+                        <a class="nav-link" href="../account/users.html"><i class="fas fa fa-user" aria-hidden="true"></i>User management</a>
+                        <a class="nav-link" href="../account/invoices.html"><i class="fas fa fa-file-invoice" aria-hidden="true"></i>Invoices</a>
                     </section>
                     <section>
                         <p class="title">CONTENT RETENTION</p>
-                        <a href="../retention/space.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Space content</a>
-                        <a href="../retention/chat.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Chat content</a>
+                        <a class="nav-link" href="../retention/space.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Space content</a>
+                        <a class="nav-link" href="../retention/chat.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Chat content</a>
                     </section>
                     <section>
                         <p class="title">PERSONAL SETTINGS</p>
-                        <a href="../personal/personal_details.html"><i class="fas fa fa-info-square" aria-hidden="true"></i>Personal details</a>
-                        <a href="../personal/picture.html"><i class="fas fa fa-id-badge" aria-hidden="true"></i>Change picture</a>
-                        <a href="../personal/verify_identity.html"><i class="far fa fa-badge-check active" aria-hidden="true"></i>Verify identity</a>
-                        <a href="../personal/account_list.html"><i class="far fa fa-building" aria-hidden="true"></i>Accounts list</a>
-                        <a href="../personal/language.html"><i class="far fa fa-globe" aria-hidden="true"></i>Language</a>
+                        <a class="nav-link" href="../personal/personal_details.html"><i class="fas fa fa-info-square" aria-hidden="true"></i>Personal details</a>
+                        <a class="nav-link" href="../personal/picture.html"><i class="fas fa fa-id-badge" aria-hidden="true"></i>Change picture</a>
+                        <a class="nav-link" href="../personal/verify_identity.html"><i class="far fa fa-badge-check active" aria-hidden="true"></i>Verify identity</a>
+                        <a class="nav-link" href="../personal/account_list.html"><i class="far fa fa-building" aria-hidden="true"></i>Accounts list</a>
+                        <a class="nav-link" href="../personal/language.html"><i class="far fa fa-globe" aria-hidden="true"></i>Language</a>
                     </section>
                     <section>
-                        <a href="#"><i class="far fa fa-user-headset" aria-hidden="true"></i>Support</a>
-                        <a href="#"><i class="far fa fa-sign-out" aria-hidden="true"></i>Sign out</a>
+                        <a class="nav-link" href="#"><i class="far fa fa-user-headset" aria-hidden="true"></i>Support</a>
+                        <a class="nav-link" href="#"><i class="far fa fa-sign-out" aria-hidden="true"></i>Sign out</a>
                     </section>
                 </div>
                 <a href="#" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a>
                 <div class="backdrop"></div>
             </div>
 
-            <div class="top-line"><a href="#" class="secondary-btn open-sidebar"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+            <div class="top-line"><a href="#" class="btn-secondary open-sidebar"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
             
             <div class="sidebar" id="sidebar">
                 <script src="../sidebar/sidebar.js"></script>
@@ -75,20 +75,20 @@
             
             <div class="main-section">
 
-                <div class="page-heading"><h3>Verify your identity</h3></div>
+                <h1 class="page-heading">Verify your identity</h1>
 
                 <div class="content">
 
                     <div class="task-area">
                         <p>Your identity is verified. Your full verified name will be used when signing documents in SignSpace.</p>
                         <p>You can update your verification in case you name changes.</p>
-                        <a href="#" class="btn bg-green">Verify again</a>
+                        <a href="#" class="btn-primary bg-green">Verify again</a>
                     </div>
 
                     <div class="task-area">
-                        <strong>Verified full name</strong>
+                        <div class="label">Verified full name</div>
                         <p>Name Name Name</p>
-                        <strong>National person ID number</strong>
+                        <div class="label">National person ID number</div>
                         <p>09090909090 ******</p>
                     </div>
 
@@ -96,9 +96,9 @@
             </div>
 
             <div class="bottom-bar">
-                <input type="submit" class="btn bg-green" form="contact-details" value="submit">
-                <a href="#" class="secondary-btn">Cancel</a>
-                <a href="#" class="secondary-btn" id="open-modal">Open modal</a>
+                <input type="submit" class="btn-primary bg-green" form="contact-details" value="submit">
+                <a href="#" class="btn-secondary">Cancel</a>
+                <a href="#" class="btn-secondary" id="open-modal">Open modal</a>
             </div>
 
         </div>

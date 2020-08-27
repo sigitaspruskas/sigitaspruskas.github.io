@@ -21,14 +21,14 @@
                         <li><a href="#">FI - Finnish</a></li>
                     </ul>
                 </div>
-                <h2>New registration</h2>
-                <h3>First, let's confirm your email. There is only one more step after this.</h3>
+                <h1 class="page-heading">New registration</h1>
+                <div class="small-heading">First, let's confirm your email. There is only one more step after this.</div>
                 <form action="#" id="email-confirm-form" class="standart-form" method="POST">
                     <p>
                         <label for="id_email"></label>
                         <input id="id_email" type="email" name="email" maxlength="100" placeholder="Enter work email" required>
                     </p>
-                    <input type="submit" value="Confirm" class="btn bg-green">
+                    <input type="submit" value="Confirm" class="btn-primary bg-green">
                 </form>
                 <a href="sign_in.html" class="large">Sign in to existing account</a>
             </div>
@@ -45,25 +45,6 @@
 <script src="static/js/main.js"></script>
 <script>
     (function(){
-        // const langBtn = $('.lang-toggle');
-        // let lang_toggle_open = false;
-
-        // function toggleLangMenu(element) {
-        //     element.find('.options-menu-dropdown').toggleClass('hide');
-        //     element.find('i.fa').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
-        //     lang_toggle_open = !lang_toggle_open;
-        // };
-
-        // $(window).on('click', function(e){
-        //     const target = $(e.target);
-
-        //     if (!target.is('.lang-toggle') && !target.parent().is('.lang-toggle') && lang_toggle_open) {
-        //         toggleLangMenu(langBtn);
-        //     } else if ($(e.target).is('.lang-toggle')) {
-        //         toggleLangMenu(langBtn);
-        //     };
-        // });
-
         $("#email-confirm-form").on("submit",function(e){
             e.preventDefault();
             if (true) {

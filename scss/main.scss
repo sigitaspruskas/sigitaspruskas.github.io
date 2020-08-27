@@ -50,7 +50,7 @@ $text-blue: #32a1d1;
 $text-white: #ffffff;
 
 // ---- GLOBAL STYLES ---- //
- * {
+* {
     box-sizing: border-box;
 }
 
@@ -63,18 +63,26 @@ body {
     }
 }
 h1 {
-    //
-}
-h2 {
-    font-size: 26px;
     font-family: ProximaSemibold;
-    margin: 20px 0 24px;
-}
-h3 {
-    font-family: ProximaSemibold;
-    font-size: 14px;
-    line-height: 140%;
-    margin: 0 0 24px;
+    color: $text-dashboard-heading;
+    &.page-heading {
+        padding-left: 16px;
+        @include tablet {
+            padding-left: 0;
+        }
+        font-size: 18px;
+        line-height: 18px;
+        margin-top: 0;
+        margin-bottom: 32px;
+        .sign-in &, .sign-up &,
+        .org-access &, .org-set-up & {
+            font-size: 26px;
+            line-height: 26px;
+            font-family: ProximaSemibold;
+            margin: 20px 0 24px;
+            padding: 0;
+        }
+    }
 }
 p {
     font-size: 14px;
@@ -85,24 +93,8 @@ p {
         margin: 0 0 24px;
     }
 }
-strong {
+strong, .label {
     font-family: ProximaSemibold;
-}
-a, .secondary-btn {
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 400;
-    display: block;
-    margin-bottom: 8px;
-    color: $text-blue;
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-    }
-    &.large {
-        font-size: 16px;
-        margin-bottom: 16px;
-    }
 }
 form {
     label {
@@ -113,9 +105,11 @@ form {
     }
 }
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    .dashboard & {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
 }
 input, select {
     display: block;
@@ -163,7 +157,7 @@ input[type=checkbox] {
 }
 .container {
     max-width: 1440px;
-    margin: 0 auto;
+    margin-left: 0;
 }
 .show {
     display: block;
@@ -173,11 +167,59 @@ input[type=checkbox] {
 }
 .ellipsis {
     text-overflow: ellipsis;
-  
-    /* Required for text-overflow to do anything */
     white-space: nowrap;
     overflow: hidden;
-  }
+}
+.link {
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.nav-link {
+    @extend .link;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    color: $text-blue;
+    &.large {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+.btn-primary {
+    @extend .link;
+    height: 40px;
+    text-align: center;
+    padding: 10px 24px;
+    color: $text-white;
+    font-family: ProximaRegular;
+    font-size: 16px;
+    border-radius: 23px;text-shadow: none;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    display: inline-block;
+}
+.btn-secondary {
+    @extend .link;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    display: block;
+    color: $text-blue;
+    &.large {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+}
+.small-heading {
+    font-family: ProximaSemibold;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0 0 24px;
+}
 .standart-form {
     margin-bottom: 32px;
     position: relative;
@@ -266,7 +308,8 @@ input[type=checkbox] {
             // @include tablet {
                 flex-wrap: nowrap;
             // }
-            .btn {
+            // .btn, 
+            .btn-primary {
                 float: left;
                 position: absolute;
                 width: 80px;
@@ -374,7 +417,8 @@ input[type=checkbox] {
         }
     }
 }
-.radio-button-form {
+// For all direct edit styles (radio, check, text input)
+.form-direct-edit {
     p {
         @extend .clearfix;
         line-height: 14px;
@@ -411,7 +455,7 @@ input[type=checkbox] {
         td {
             vertical-align: middle;
             font-size: 14px;
-            .secondary-btn {
+            .btn-secondary {
                 padding: 0;
             }
             .reminder {
@@ -475,17 +519,6 @@ input[type=checkbox] {
         margin-bottom: 16px;
         min-width: unset;
     }
-}
-.btn {
-    height: 40px;
-    text-align: center;
-    padding: 10px 24px;
-    color: $text-white;
-    font-family: ProximaRegular;
-    font-size: 16px;
-    border-radius: 23px;text-shadow: none;
-    border: none;
-    box-shadow: none;
 }
 .text-strong {
     font-family: ProximaSemibold;
@@ -611,11 +644,10 @@ input[type=checkbox] {
     color: $text-grey;
 }
 .row {
-    h2 {
+    * {
         display: inline-block;
     }
     a {
-        display: inline-block;
         margin-right: 24px;
     }
 }
@@ -655,6 +687,9 @@ input[type=checkbox] {
         height: 100vh;
         padding: 0;
         display: none;
+        @include small-desktop {
+            display: block;
+        }
         position: absolute;
         top: 0;
         width: 500px;
@@ -664,6 +699,8 @@ input[type=checkbox] {
         img {
             max-width: 100%;
             max-height: 100%;
+            position: absolute;
+            z-index: 1;
         }
         .bg-bottom {
             float: right;
@@ -671,9 +708,6 @@ input[type=checkbox] {
             height: 100vh;
             position: relative;
             z-index: 0;
-        }
-        @include small-desktop {
-            display: block;
         }
     }
 }
@@ -919,20 +953,20 @@ input[type=checkbox] {
 body.dashboard {
     background: $bg-main-grey;
 }
-.dashboard {
+.dashboard-content {
     position: relative;
-    .btn, .secondary-btn {
+    .btn-primary, .btn-secondary {
         display: inline-block;
         margin-right: 8px;
     }
-    .btn {
+    .btn-primary {
         font-size: 14px;
         padding: 8px 16px;
         height: auto;
         width: auto;
         max-width: 400px;
     }
-    .secondary-btn {
+    .btn-secondary {
         display: inline-block;
         margin-right: 8px;
         padding: 8px 16px;
@@ -976,7 +1010,6 @@ body.dashboard {
                 width: 14px;
                 height: 14px;
                 font-weight: 900;
-                // margin-right: 4px;
                 font-size: 14px;
                 color: $text-dark-grey;
                 position: absolute;
@@ -1072,7 +1105,6 @@ body.dashboard {
     padding-bottom: 100px; // for bottom-bar pop up spacing
     font-size: 14px;
     color: $text-dark-grey;
-    // test css 
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
     &::-webkit-scrollbar { 
@@ -1089,7 +1121,7 @@ body.dashboard {
         &:last-child {
             margin-bottom: 0;
         }
-        .secondary-btn {
+        .btn-secondary {
             padding: 0;
         }
     }
@@ -1111,21 +1143,6 @@ body.dashboard {
             padding: 0;
         }
     }
-    .page-heading {
-        padding-left: 16px;
-        @include tablet {
-            padding-left: 0;
-        }
-        h3 {
-
-            font-family: ProximaSemibold;
-            font-size: 18px;
-            line-height: 18px;
-            color: $text-dashboard-heading;
-            margin-bottom: 0;
-        }
-        margin-bottom: 32px;
-    }
     .tab-area {
         .tab {
             width: auto;
@@ -1146,10 +1163,12 @@ body.dashboard {
         }
     }
     .area-heading {
-        h3 {
+        // h3 {
             font-size: 16px;
             line-height: 16px;
-        }
+            font-family: ProximaSemibold;
+            margin: 0 0 24px;
+        // }
     }
     .text-small {
         font-size: 12px;
@@ -1204,9 +1223,6 @@ body.dashboard {
         width: 80px;
         height: 80px;
     }
-    // form {
-        // margin-bottom: 0;
-    // }
 }
 .bottom-bar {
     // -----
@@ -1326,7 +1342,7 @@ body.dashboard {
         width: 39%;
         text-align: left;
         padding-left: 8px;
-        .secondary-btn {
+        .btn-secondary {
             padding: 0;
             font-size: 12px;
         }

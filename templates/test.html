@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organisation confirmation</title>
+    <!-- <link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css"> -->
+
+    <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <link href="../css/reset.css" rel="stylesheet"/>
+    <link href="../css/main.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/ddcbc7c82c.js" crossorigin="anonymous"></script>
+</head>
+<body class="dashboard">
+
+    <div class="modal">
+        <div class="inner">
+            <a href="#" class="close">
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </a>
+            <div class="content">CONTENT</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="dashboard-content clearfix">
+
+            <div class="sidebar-mobile hide">
+                <div class="sidebar-content">
+                    <section>
+                        <a href="#"><i class="fas fa fa-mail-reply" aria-hidden="true"></i>Back to home</a>
+                    </section>
+                    <section>
+                        <p class="title">ACCOUNT MANAGEMENT</p>
+                        <a href="../account/subscriptions.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Active subscription very long translated text</a>
+                        <a href="../account/org_logo.html"><i class="fas fa fa-image" aria-hidden="true"></i>Organisation logo</a>
+                        <a href="../account/org_details.html"><i class="fas fa fa-house" aria-hidden="true"></i>Organisation details</a>
+                        <a href="../account/contacts.html"><i class="fas fa fa-phone" aria-hidden="true"></i>Contacts details</a>
+                        <a href="../account/users.html"><i class="fas fa fa-user" aria-hidden="true"></i>User management</a>
+                        <a href="../account/invoices.html"><i class="fas fa fa-file-invoice" aria-hidden="true"></i>Invoices</a>
+                    </section>
+                    <section>
+                        <p class="title">CONTENT RETENTION</p>
+                        <a href="../retention/space.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Space content</a>
+                        <a href="../retention/chat.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Chat content</a>
+                    </section>
+                    <section>
+                        <p class="title">PERSONAL SETTINGS</p>
+                        <a href="../personal/personal_details.html"><i class="fas fa fa-info-square" aria-hidden="true"></i>Personal details</a>
+                        <a href="../personal/picture.html"><i class="fas fa fa-id-badge" aria-hidden="true"></i>Change picture</a>
+                        <a href="../personal/verify_identity.html"><i class="far fa fa-badge-check active" aria-hidden="true"></i>Verify identity</a>
+                        <a href="../personal/account_list.html"><i class="far fa fa-building" aria-hidden="true"></i>Accounts list</a>
+                        <a href="../personal/language.html"><i class="far fa fa-globe" aria-hidden="true"></i>Language</a>
+                    </section>
+                    <section>
+                        <a href="#"><i class="far fa fa-user-headset" aria-hidden="true"></i>Support</a>
+                        <a href="#"><i class="far fa fa-sign-out" aria-hidden="true"></i>Sign out</a>
+                    </section>
+                </div>
+                <a href="#" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a>
+                <div class="backdrop"></div>
+            </div>
+
+            <div class="top-line"><a href="#" class="btn-secondary open-sidebar"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+            
+            <div class="sidebar" id="sidebar">
+                <script src="sidebar/sidebar.js"></script>
+                <script>
+                    $('#sidebar').append(sidebarHTML)
+                </script>
+            </div>
+            
+            <div class="main-section">
+
+                <h1 class="page-heading">Common styles cheatsheet</h1>
+
+                <div class="notification">
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    Notification text... Can also have <a href="" class="btn-secondary">Secondary CTA</a>
+                </div>
+
+                <div class="content">
+
+                    <div class="task-area">
+                        <div class="area-heading">This is area heading</div>
+                        <p>This is a place for a text paragraph. It also can span accroos multiple lines. 
+                            It can have links like <a href="" class="btn-secondary"> This link</a>
+                        </p>
+                    </div>
+
+                    <div class="task-area">
+                        <p>Text without anything else in a task area.</p>
+                    </div>
+
+                    <div class="task-area">
+                        <p>Text paragraph can have two CTA buttons: </p>
+                        <a href="#" class="btn-primary bg-green">Primary button</a>
+                        <a href="#" class="btn-secondary">Secondary button</a>
+                    </div>
+
+                    <div class="task-area">
+                        <strong>THIS IS STRONG-BOLD TEXT</strong>
+                        <p class="text-small">This is small-text, might be used for date stamps and etc.</p>
+                    </div>
+
+                    <div class="task-area">
+                        <div class="notification"><i class="fa fa-question-circle" aria-hidden="true"></i> Inner notification</div>
+
+                        <strong>Label</strong>
+                        <p>Value</p>
+                        <strong>Label</strong>
+                        <p>Value</p>
+
+                        <a href="#" class="btn-primary bg-green">Edit in Modaln</a>
+                        <a href="#" class="btn-secondary">Secondary button</a>
+                    </div>
+
+                    <div class="task-area">
+                        <form action="POST" class="form-direct-edit">
+                            <p>
+                                <label for="FI">FI</label>
+                                <input type="radio" id="FI" value="FI" name="language">
+                            </p>
+                            <p>
+                                <label for="ENG">ENG</label>
+                                <input type="radio" id="ENG" value="ENG" name="language">
+                            </p>
+                            <input type="submit" class="btn-primary bg-green" value="Save changes">
+                        </form>
+                    </div>
+
+                    <!-- <div class="task-area">
+                        <div class="area-heading"><h3>Signatures included in the plan</h3></div>
+                        <p><strong>200 signatures used (of 600)</strong></p>
+                        <p class="text-small">200 completed<br>40 in progress</p>
+                    </div>
+
+                    <div class="task-area">
+                        <div class="area-heading"><h3>Additional paid signatures used this period</h3></div>
+                        <p><strong>0 signatures used (1,00 €/signature)</strong></p>
+                        <p class="text-small">0 completed<br>40 in progress</p>
+                    </div> -->
+                    
+                </div>
+
+            </div>
+            
+        </div>
+
+    </div>
+</body>
+
+<script src="../../static/js/main.js"></script>
+
+</html>

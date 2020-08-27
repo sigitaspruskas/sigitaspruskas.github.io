@@ -26,7 +26,7 @@
     </div>
     
     <div class="container">
-        <div class="dashboard">
+        <div class="dashboard-content clearfix">
 
             <div class="sidebar-mobile hide">
                 <div class="sidebar-content">
@@ -35,36 +35,36 @@
                     </section>
                     <section>
                         <p class="title">ACCOUNT MANAGEMENT</p>
-                        <a href="../account/subscriptions.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Active subscription</a>
-                        <a href="../account/org_logo.html"><i class="fas fa fa-image" aria-hidden="true"></i>Organisation logo</a>
-                        <a href="../account/org_details.html"><i class="fas fa fa-house" aria-hidden="true"></i>Organisation details</a>
-                        <a href="../account/contacts.html"><i class="fas fa fa-phone" aria-hidden="true"></i>Contacts details</a>
-                        <a href="../account/users.html"><i class="fas fa fa-user" aria-hidden="true"></i>User management</a>
-                        <a href="../account/invoices.html"><i class="fas fa fa-file-invoice" aria-hidden="true"></i>Invoices</a>
+                        <a class="nav-link" href="../account/subscriptions.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Active subscription very long translated text</a>
+                        <a class="nav-link" href="../account/org_logo.html"><i class="fas fa fa-image" aria-hidden="true"></i>Organisation logo</a>
+                        <a class="nav-link" href="../account/org_details.html"><i class="fas fa fa-house" aria-hidden="true"></i>Organisation details</a>
+                        <a class="nav-link" href="../account/contacts.html"><i class="fas fa fa-phone" aria-hidden="true"></i>Contacts details</a>
+                        <a class="nav-link" href="../account/users.html"><i class="fas fa fa-user" aria-hidden="true"></i>User management</a>
+                        <a class="nav-link" href="../account/invoices.html"><i class="fas fa fa-file-invoice" aria-hidden="true"></i>Invoices</a>
                     </section>
                     <section>
                         <p class="title">CONTENT RETENTION</p>
-                        <a href="../retention/space.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Space content</a>
-                        <a href="../retention/chat.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Chat content</a>
+                        <a class="nav-link" href="../retention/space.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Space content</a>
+                        <a class="nav-link" href="../retention/chat.html"><i class="fa fa-chart-bar" aria-hidden="true"></i>Chat content</a>
                     </section>
                     <section>
                         <p class="title">PERSONAL SETTINGS</p>
-                        <a href="../personal/personal_details.html"><i class="fas fa fa-info-square" aria-hidden="true"></i>Personal details</a>
-                        <a href="../personal/picture.html"><i class="fas fa fa-id-badge" aria-hidden="true"></i>Change picture</a>
-                        <a href="../personal/verify_identity.html"><i class="far fa fa-badge-check active" aria-hidden="true"></i>Verify identity</a>
-                        <a href="../personal/account_list.html"><i class="far fa fa-building" aria-hidden="true"></i>Accounts list</a>
-                        <a href="../personal/language.html"><i class="far fa fa-globe" aria-hidden="true"></i>Language</a>
+                        <a class="nav-link" href="../personal/personal_details.html"><i class="fas fa fa-info-square" aria-hidden="true"></i>Personal details</a>
+                        <a class="nav-link" href="../personal/picture.html"><i class="fas fa fa-id-badge" aria-hidden="true"></i>Change picture</a>
+                        <a class="nav-link" href="../personal/verify_identity.html"><i class="far fa fa-badge-check active" aria-hidden="true"></i>Verify identity</a>
+                        <a class="nav-link" href="../personal/account_list.html"><i class="far fa fa-building" aria-hidden="true"></i>Accounts list</a>
+                        <a class="nav-link" href="../personal/language.html"><i class="far fa fa-globe" aria-hidden="true"></i>Language</a>
                     </section>
                     <section>
-                        <a href="#"><i class="far fa fa-user-headset" aria-hidden="true"></i>Support</a>
-                        <a href="#"><i class="far fa fa-sign-out" aria-hidden="true"></i>Sign out</a>
+                        <a class="nav-link" href="#"><i class="far fa fa-user-headset" aria-hidden="true"></i>Support</a>
+                        <a class="nav-link" href="#"><i class="far fa fa-sign-out" aria-hidden="true"></i>Sign out</a>
                     </section>
                 </div>
                 <a href="#" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a>
                 <div class="backdrop"></div>
             </div>
 
-            <div class="top-line"><a href="#" class="secondary-btn open-sidebar"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
+            <div class="top-line"><a href="#" class="btn-secondary open-sidebar"><i class="fa fa-bars" aria-hidden="true"></i></a></div>
             
             <div class="sidebar" id="sidebar">
                 <script src="../sidebar/sidebar.js"></script>
@@ -75,12 +75,12 @@
             
             <div class="main-section">
 
-                <div class="page-heading"><h3>Change picture</h3></div>
+                <h1 class="page-heading">Change picture</h1>
 
                 <div class="content">
                     
                     <div class="task-area">
-                        <p>RRetention period is tracked for each file and chat activity separately from the point 
+                        <p>Retention period is tracked for each file and chat activity separately from the point 
                             in time when it is first created.</p>
                         <p>After the indicated retention period each content is automatically removed from your account. 
                             Content may remain visible to other users invited in the chat depending on their retention 
@@ -95,7 +95,7 @@
                     </div>
 
                     <div class="task-area">
-                        <div class="page-heading"><h3>Retention periods</h3></div>
+                        <div class="area-heading">Retention periods</div>
                         <div class="table-wrapp">
                             <form action="POST" class="standart-form retention-periods">
                                 <table class="standart-table">
@@ -114,11 +114,11 @@
                                                     <input type="number" name="months" value="12" class="hide">
                                                 </p>
                                             </td>
-                                            <td class="action"><a href="#" class="btn bg-green">Edit</a></td>
+                                            <td class="action"><a href="#" class="btn-primary bg-green">Edit</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
-                                <input type="submit" id="" class="btn bg-green hide" value="Save">
+                                <input type="submit" id="" class="btn-primary bg-green hide" value="Save">
                             </form>
                         </div>
                     </div>
@@ -128,9 +128,9 @@
             </div>
 
             <div class="bottom-bar">
-                <input type="submit" class="btn bg-green" form="contact-details" value="submit">
-                <a href="#" class="secondary-btn">Cancel</a>
-                <a href="#" class="secondary-btn" id="open-modal">Open modal</a>
+                <input type="submit" class="btn-primary bg-green" form="contact-details" value="submit">
+                <a href="#" class="btn-secondary">Cancel</a>
+                <a href="#" class="btn-secondary" id="open-modal">Open modal</a>
             </div>
 
         </div>

@@ -21,7 +21,7 @@
                         <li><a href="#">FI - Finnish</a></li>
                     </ul>
                 </div>
-                <h2>Sign In</h2>
+                <h1 class="page-heading">Sign In</h1>
                 <form action="#" id="sign-in-form" class="standart-form" method="POST">
                     <p>
                         <label for="id_email">Email</label>
@@ -34,7 +34,7 @@
                             <a href="restore_password.html" class="form-link">Forgot your password?</a>
                         </div>
                     </p>
-                    <input type="submit" value="Sign in" class="btn bg-green">
+                    <input type="submit" value="Sign in" class="btn-primary bg-green">
                 </form>
                 <a href="sign_up_step1_email.html" class="large">Create a new account</a>
             </div>
@@ -47,29 +47,6 @@
         </div>
     </div>
 </body>
-
-<!-- <script>
-    (function(){
-        const langBtn = $('.lang-toggle');
-        let lang_toggle_open = false;
-
-        function toggleLangMenu(element) {
-            element.find('.options-menu-dropdown').toggleClass('hide');
-            element.find('i.fa').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
-            lang_toggle_open = !lang_toggle_open;
-        };
-
-        $(window).on('click', function(e){
-            const target = $(e.target);
-
-            if (!target.is('.lang-toggle') && !target.parent().is('.lang-toggle') && lang_toggle_open) {
-                toggleLangMenu(langBtn);
-            } else if ($(e.target).is('.lang-toggle')) {
-                toggleLangMenu(langBtn);
-            };
-        });
-    })()
-</script> -->
 <script src="static/js/main.js"></script>
 
 </html>
