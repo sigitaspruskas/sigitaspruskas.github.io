@@ -1,15 +1,4 @@
 (function(){
-    const langBtn = $('.lang-toggle');
-    let lang_toggle_open = false;
-    
-    $(document).click(function(e) {
-        const target = $(e.target);
-
-        if (target.is('.modal') || target.closest('a.close').length) {
-            $("body").find(".modal").removeClass("open");
-            $('body').toggleClass('no-scroll');
-        };
-    });
 
     $('#open-modal').click(function(){
         $('.modal').addClass('open');
@@ -17,28 +6,29 @@
     })
 
     $('.open-sidebar').click(function(){
-        $('.sidebar-mobile').toggleClass('hide')
+        $('.sidebar-mobile').toggleClass('hide');
+        $('body').toggleClass('no-scroll');
     });
-
-    function toggleLangMenu(element) {
-        element.find('.options-menu-dropdown').toggleClass('hide');
-        element.find('i.fa').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
-        lang_toggle_open = !lang_toggle_open;
-    };
 
     $(window).on('click', function(e){
         const target = $(e.target);
+
+        // toggle modal
+        if (target.is('.modal') || target.closest('a.close').length) {
+            $('.modal').removeClass('open');
+            $('body').toggleClass('no-scroll');
+        };
         
-        // toggle language select pop up
-        if (!target.is('.lang-toggle') && !target.parent().is('.lang-toggle') && lang_toggle_open) {
-            toggleLangMenu(langBtn);
-        } else if ($(e.target).is('.lang-toggle')) {
-            toggleLangMenu(langBtn);
+        // toggle lang menu
+        if (target.is('.lang-toggle') || target.parent().is('.lang-toggle')) {
+            $('.options-menu-dropdown').toggleClass('hide');
+            $('.lang-toggle').find('i.fa').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
         };
 
-        // toggle sidebar on mobile screen size
-        if (target.is('.close-sidebar') || target.parent().is('.close-sidebar') || target.is('.backdrop')) {
+        // close sidebar on mobile screen size
+        if (target.parent().is('.close-sidebar') || target.is('.backdrop')) {
             $('.sidebar-mobile').toggleClass('hide');
+            $('body').toggleClass('no-scroll');
         };
     });
 
