@@ -22,7 +22,7 @@
         // toggle lang menu
         if (target.is('.lang-toggle') || target.parent().is('.lang-toggle')) {
             $('.options-menu-dropdown').toggleClass('hide');
-            $('.lang-toggle').find('i.fa').toggleClass('fa-caret-down').toggleClass('fa-caret-up');
+            $('.lang-toggle').find('i.fa').toggleClass(['fa-caret-down', 'fa-caret-up']);
         };
 
         // close sidebar on mobile screen size

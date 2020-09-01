@@ -628,6 +628,12 @@ input[type=checkbox] {
 
 .row * {
   display: inline-block;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .row * {
+    margin-bottom: 0;
+  }
 }
 .row a {
   margin-right: 24px;
