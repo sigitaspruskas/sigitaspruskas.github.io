@@ -20,7 +20,7 @@
         };
         
         // toggle lang menu
-        if (target.is('.lang-toggle') || target.parent().is('.lang-toggle')) {
+        if (target.is('.lang-toggle') || target.parents('.lang-toggle').length) {
             $('.options-menu-dropdown').toggleClass('hide');
             $('.lang-toggle').find('i.fa').toggleClass(['fa-caret-down', 'fa-caret-up']);
         };

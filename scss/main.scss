@@ -719,7 +719,7 @@ input[type=checkbox] {
     p {
         margin-bottom: 24px;
     }
-    a {
+    a.btn-secondary {
         @include tablet {
             position: absolute;
             left: 180px;
@@ -806,6 +806,7 @@ input[type=checkbox] {
                 float: right;
                 a {
                     display: inline-block;
+                    color: inherit;
                 }
                 @include small-desktop {
                     width: calc(100% - 24px);

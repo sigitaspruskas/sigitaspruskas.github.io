@@ -714,7 +714,7 @@ input[type=checkbox] {
   margin-bottom: 24px;
 }
 @media (min-width: 768px) {
-  .sign-up.confirm-email a {
+  .sign-up.confirm-email a.btn-secondary {
     position: absolute;
     left: 180px;
     bottom: 53px;
@@ -790,6 +790,7 @@ input[type=checkbox] {
 }
 .sign-up.personal p label.terms a, .org-set-up p label.terms a {
   display: inline-block;
+  color: inherit;
 }
 @media (min-width: 900px) {
   .sign-up.personal p label.terms, .org-set-up p label.terms {
